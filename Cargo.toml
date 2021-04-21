@@ -1,0 +1,17 @@
+[package]
+name = "structural-assert"
+version = "0.1.0"
+authors = ["Gregory Oakes <gregcoakes@gmail.com>"]
+edition = "2018"
+license = "MIT"
+repository = "https://github.com/gcoakes/structural-assert"
+description = "Proc macro to generate tests which make assertions about a struct's layout."
+
+[dependencies]
+proc-macro2 = "1.0.26"
+quote = "1.0.9"
+syn = { version = "1.0.69", features = ["full"] }
+memoffset = "0.6.3"
+
+[lib]
+proc-macro = true
